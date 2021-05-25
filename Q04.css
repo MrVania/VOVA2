@@ -1,0 +1,92 @@
+header {
+  background-color: #ffe570;
+  text-align: left;
+  border-bottom: solid;
+}
+nav {
+  height: inherit;
+  background-color: #ffe570;
+  text-align: right;
+  text-decoration: underline;
+}
+
+
+body {
+  background-color: white;
+  font-family: tahoma;
+  color: black;
+}
+
+
+article {
+  display: inline-block; /* To display the elements side-by-side */
+  vertical-align: top; /* Position: relative, so the element is affected by the sibling */
+}
+
+#article {
+  display: inline-block; /* To display the elements side-by-side */
+  vertical-align: top; /* Position: relative, so the element is affected by the sibling */
+}
+
+article h1 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+article p {
+  font-size: 14px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+aside {
+  height: 600px;
+  width: 600px;
+  display: inline-block; /* To display the elements side-by-side */
+}
+
+footer {
+  background-color: #ffe570;
+  height: 5%;
+  width: 100%; /* All the content is centered apart from the footer */
+}
+
+.leftimg {
+    float:left;
+    margin: 7px 7px 7px 0;
+    width: 100%;
+   }
+
+.rightimg  {
+    float: right;
+    margin: 7px 0 7px 7px;
+    width: 100%;
+   }
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header h2 {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+@media screen and (min-width:601px) {
+   header h1 {font-size: 40px;}
+   header h2 {font-size: 30px;}
+   article h1 {font-size: 32px;}
+   article p {font-size: 16px;}
+   footer p {font-size: 16px;}
+   .leftimg {width: 300px;}
+   .rightimg {width:300px;}
+}
+@media only screen and (min-width: 600px) { /* Responsive breakpoint - targets devices that have a minimum width of 600px and applies these styles */
